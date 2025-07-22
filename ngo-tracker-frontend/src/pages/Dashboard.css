@@ -1,0 +1,25 @@
+/* src/pages/Dashboard.css */
+.dashboard {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.dashboard h2 {
+  margin-bottom: 1rem;
+}
+
+.dashboard ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dashboard li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}

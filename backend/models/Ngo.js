@@ -1,15 +1,12 @@
-// models/Ngo.js
 import mongoose from 'mongoose';
 
 const ngoSchema = new mongoose.Schema({
-  name: { type: String, required: true },
+  name: String,
   registrationNumber: { type: String, unique: true },
   contactEmail: String,
-  website: String,
-  verified: { type: Boolean, default: false },
-  description: String,
   location: String,
-  projects: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Project' }],
+  description: String,
+  verified: { type: Boolean, default: false },
 });
 
 export default mongoose.model('Ngo', ngoSchema);
